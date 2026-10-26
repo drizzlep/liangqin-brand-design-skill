@@ -1,0 +1,50 @@
+{
+  "version": "3.0.0",
+  "brand": "良禽佳木",
+  "package_role": "brand_assets",
+  "purpose": "声明良禽佳木可用的真实品牌识别资产与用法，避免明确要求 logo 时退化成纯文字品牌名或凭空重绘。",
+  "default_logo_inclusion": "explicit_request_only",
+  "fill_color": "#9E7F63",
+  "assets": [
+    {
+      "id": "logo_horizontal_svg",
+      "role": "primary_header_mark",
+      "path": "assets/brand/liangqinjiamu-logo-horizontal.svg",
+      "fallback_paths": [
+        "assets/brand/liangqinjiamu-logo-horizontal.png"
+      ],
+      "viewBox": "161 406 678 188",
+      "size": "678x188",
+      "aspect_ratio": "3.61:1",
+      "cropped": "2026-09-24 按图形边界裁切，画布与图形一致，可直接按高度排版",
+      "usage": [
+        "页头、页尾、品牌签名区与横向品牌落款的默认选择。",
+        "可见字高不低于 24px；四周净空不小于可见高度的 1/4。"
+      ]
+    },
+    {
+      "id": "logo_vertical_svg",
+      "role": "square_or_editorial_mark",
+      "path": "assets/brand/liangqinjiamu-logo-vertical.svg",
+      "fallback_paths": [
+        "assets/brand/liangqinjiamu-logo-vertical.png"
+      ],
+      "viewBox": "216 290 568 419",
+      "size": "568x419",
+      "aspect_ratio": "1.36:1",
+      "cropped": "2026-09-24 按图形边界裁切",
+      "usage": [
+        "仅用于竖版品牌页、封面或纵向识别的签名场景。",
+        "不要替代横向标志在常规导航中的位置。"
+      ]
+    }
+  ],
+  "prohibited": [
+    "拉伸、描边、加浮雕、加发光、改字距、旋转",
+    "叠加在高噪声或低对比图像上",
+    "重绘字形或凭记忆重新排版标志",
+    "按 token 给标志重新上色",
+    "用纯文字品牌名冒充标志"
+  ],
+  "missing_asset_rule": "用户明确要求加入 logo 但读不到真实资产时，只输出结构化 spec 并说明缺口，不伪造成品。"
+}
